@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "strict": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "importHelpers": true,
+        "allowSyntheticDefaultImports": true,
+        "useDefineForClassFields": true,
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ]
+        },
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "@dcloudio/types",
+            "@types/wechat-miniprogram",
+            "@uni-helper/uni-app-types",
+            "@uni-helper/uni-ui-types"
+        ]
+    },
+    "vueCompilerOptions": {
+        "plugins": [
+            "@uni-helper/uni-app-types/volar-plugin"
+        ]
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue",
+        "*.d.ts"
+    ]
+}
